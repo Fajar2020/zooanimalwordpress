@@ -1,0 +1,120 @@
+.captivitySection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+.captivity-container{
+    position: relative;
+    width: 100rem;
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+
+.captivity-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.captivity-card:nth-child(even){
+    flex-direction: column-reverse;
+}
+
+.captivity-img{
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    background: #000;
+}
+
+.captivity-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.captivity-content{
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captivity-content div {
+    padding: 2rem;
+    text-align: center;
+}
+
+.captivity-content div h2{
+    font-size: 2rem;
+}
+
+.captivity-content div p{
+    font-size: 1.5rem;
+}
+
+.captivity-content div a{
+    padding: 1rem 1.5rem;
+    border: 2px solid #191919;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #191919;
+    transition: .5s;
+    float: right;
+}
+
+.captivity-content div a:hover{
+    background: #006400;
+    color:#eee;
+    border: 2px solid #006400;
+}
+
+@media screen and (max-width: 1000px){
+    .captivity-container{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin: 5rem;
+    }
+
+    .captivity-card {
+        flex-direction: row;
+        margin: 1rem 0;
+    }
+
+    .captivity-card:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .captivity-img, .captivity-content{
+        width: 50%;
+    }
+
+    .captivity-img img{
+        object-fit: fill;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .captivity-card {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .captivity-card:nth-child(even){
+        flex-direction: column;
+    }
+
+    .captivity-img, .captivity-content{
+        width: 100%;
+    }
+}

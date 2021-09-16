@@ -1,0 +1,123 @@
+/*Page banner*/
+.page-image{
+    width: 100%;
+    height: 50vh;
+}
+
+.page-text{
+    width: 100%;
+    position: absolute;
+    color: #eee;
+    top: 20%;
+    /* transform: translateY(25%); */
+    text-align: justify;
+    padding: 0 10%;
+}
+
+.page-text p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.page-container-a{
+    font-size: 1.7rem;
+    color: #eee;
+    padding: 1rem 2rem;
+    min-width: 25rem;
+    max-width: 45rem;
+    top: -3rem;
+    background-color: #006400;
+    position: relative;
+}
+
+.page-content{
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.page-content p {
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+
+.page-content h1{
+    color: #006400;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+.page-content ul{
+    padding-left: 3rem;
+    list-style-type: square;
+    color: limegreen;
+}
+
+.page-content ul li{
+    padding: .7rem 0rem;
+}
+
+.page-content ul li a{
+    color: #191919;
+    font-size: 1.8rem;
+}
+
+.page-content ul li a:hover{
+    color: #006400;
+    font-weight: bolder;
+}
+
+.page-content ul li a span:hover{
+    color: #eee;
+}
+
+.page-text h1{
+    font-size: 6rem;
+    margin: 2rem 0;
+    font-family: 'Blastimo', sans-serif;
+}
+
+.captive-h3{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+@media screen and (max-width: 850px){
+    .page-text h1{
+        font-size: 4rem;
+    }
+    
+    .page-content{
+        width: 100%;
+    }
+
+    .page-content h1{
+        font-size: 3rem;
+    }
+}
+
+
+.img-responsive{
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+}
+
+/* .swiper-container {
+    width: 600px;
+    height: 300px;
+} */
+
+/* 
+.page h1{
+    font-size: 8rem;
+    margin: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page p{
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+} */

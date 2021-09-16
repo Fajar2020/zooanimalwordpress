@@ -1,0 +1,31 @@
+.eventSection{
+    background: #eee;
+}
+
+.events{
+    padding: 0 2rem;
+    /* color: #eee; */
+    font-size: 1.7rem;
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.events ul{
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.events ul li{
+    background: #292929;
+    list-style: none;
+    box-sizing: border-box;
+    height: 17rem;
+    margin: 2rem 0;
+}
+
+.detailEventArchive{
+    background: #ccc;
+}

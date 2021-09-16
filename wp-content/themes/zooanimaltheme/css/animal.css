@@ -1,0 +1,81 @@
+.singleAnimalSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    padding: 5rem 0;
+}
+
+.single-animal-container{
+    position: relative;
+    width: 100rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.single-animal-card{
+    position: relative;
+    /* max-width: 45rem; */
+    max-width: 90rem;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.single-animal-img{
+    max-width: 30rem;
+    flex: 0 0 30rem;
+}
+
+.single-animal-img img{
+    max-width: 100%;
+}
+
+.single-animal-container .single-animal-card .single-animal-content{
+    margin-left: 2rem;
+}
+
+.single-animal-content h2{
+    font-size: 2.3rem;
+    line-height: 4rem;
+    margin: 1rem 0;
+}
+
+.single-animal-content p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+@media screen and (max-width:950px){
+    .single-animal-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:750px){
+    
+    .single-animal-card{
+        flex-direction: column-reverse;
+        max-width: 80%;
+    }
+
+    .single-animal-img{
+        max-width: 100%;
+        flex: none;
+    }
+
+    .single-animal-container .single-animal-card .single-animal-content{
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+.single-container-a{
+    top: -7rem;
+    float: left;
+}
